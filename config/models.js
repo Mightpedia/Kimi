@@ -13,13 +13,6 @@ const AI_MODELS = {
     capabilities: ['text', 'reasoning', 'thinking'],
     description: 'Efficient reasoning model with 8B parameters'
   },
-  'kimi-dev-72b': {
-    name: 'Kimi Dev 72B',
-    provider: 'openrouter',
-    model: 'moonshotai/kimi-dev-72b:free',
-    capabilities: ['text', 'coding', 'engineering'],
-    description: 'Specialized for software engineering tasks'
-  },
   'qwen3-30b': {
     name: 'Qwen3 30B A3B',
     provider: 'openrouter',
@@ -34,6 +27,13 @@ const AI_MODELS = {
     capabilities: ['text', 'vision', 'multilingual'],
     description: 'Multimodal model with vision capabilities'
   },
+  'mistral-7b': {
+    name: 'Mistral 7B Instruct',
+    provider: 'openrouter',
+    model: 'mistralai/mistral-7b-instruct:free',
+    capabilities: ['text', 'reasoning'],
+    description: 'High-performing 7.3B model optimized for speed and context length'
+  },
   'reka-flash-3': {
     name: 'Reka Flash 3',
     provider: 'openrouter',
@@ -41,31 +41,55 @@ const AI_MODELS = {
     capabilities: ['text', 'reasoning', 'coding'],
     description: 'Fast and efficient general-purpose model'
   },
-   'devstral-small': {
-        name: 'Devstral Small (24B)',
-        model: 'mistralai/devstral-small-2505:free',
-        capabilities: ['text', 'coding', 'agentic'],
-        description: 'Specialized for advanced software engineering tasks.'
-    },
-    'glm-z1-32b': {
-        name: 'GLM-Z1 Reasoning (32B)',
-        model: 'thudm/glm-z1-32b:free',
-        capabilities: ['text', 'reasoning', 'coding', 'math'],
-        description: 'Enhanced reasoning variant for deep logical problem solving.'
-    },
-    'mai-ds-r1': {
-        name: 'Microsoft MAI DS R1',
-        model: 'microsoft/mai-ds-r1:free',
-        capabilities: ['text', 'reasoning', 'coding'],
-        description: 'Reasoning model with enhanced safety and unblocking.'
-    },
-    'gemma-3n-2b': {
-        name: 'Google Gemma 3n (2B)',
-        model: 'google/gemma-3n-e2b-it:free',
-        capabilities: ['text', 'multilingual', 'reasoning'],
-        description: 'Efficient multimodal model for low-resource deployment.'
-    }
-  
+  'devstral-small': {
+    name: 'Devstral Small (24B)',
+    provider: 'openrouter',
+    model: 'mistralai/devstral-small-2505:free',
+    capabilities: ['text', 'coding', 'agentic'],
+    description: 'Specialized for advanced software engineering tasks.'
+  },
+  'glm-z1-32b': {
+    name: 'GLM-Z1 Reasoning (32B)',
+    provider: 'openrouter',
+    model: 'thudm/glm-z1-32b:free',
+    capabilities: ['text', 'reasoning', 'coding', 'math'],
+    description: 'Enhanced reasoning variant for deep logical problem solving.'
+  },
+  'mai-ds-r1': {
+    name: 'Microsoft MAI DS R1',
+    provider: 'openrouter',
+    model: 'microsoft/mai-ds-r1:free',
+    capabilities: ['text', 'reasoning', 'coding'],
+    description: 'Reasoning model with enhanced safety and unblocking.'
+  },
+  'gemma-3n-2b': {
+    name: 'Google Gemma 3n (2B)',
+    provider: 'openrouter',
+    model: 'google/gemma-3n-e2b-it:free',
+    capabilities: ['text', 'multilingual', 'reasoning'],
+    description: 'Efficient multimodal model for low-resource deployment.'
+  },
+  'deepseek-v3-base': {
+    name: 'DeepSeek V3 Base',
+    provider: 'openrouter',
+    model: 'deepseek/deepseek-v3-base:free',
+    capabilities: ['text', 'reasoning', 'math', 'coding'],
+    description: '671B MoE model with 128K context. Requires detailed prompting.'
+  },
+  'qwerky-72b': {
+    name: 'Qwerky 72B',
+    provider: 'openrouter',
+    model: 'featherless/qwerky-72b:free',
+    capabilities: ['text', 'reasoning', 'multilingual'],
+    description: 'Linear-attention 72B model with efficient large-context inference'
+  },
+  'llama-3.3-70b': {
+    name: 'LLaMA 3.3 70B Instruct',
+    provider: 'openrouter',
+    model: 'meta-llama/llama-3.3-70b-instruct:free',
+    capabilities: ['text', 'multilingual', 'reasoning'],
+    description: 'Multilingual 70B model optimized for dialogue and industry benchmarks'
+  }
 };
 
 module.exports = { AI_MODELS };
