@@ -41,13 +41,31 @@ const AI_MODELS = {
     capabilities: ['text', 'reasoning', 'coding'],
     description: 'Fast and efficient general-purpose model'
   },
-  'hunyuan-a13b': {
-    name: 'Hunyuan A13B',
-    provider: 'openrouter',
-    model: 'tencent/hunyuan-a13b-instruct:free',
-    capabilities: ['text', 'reasoning', 'chain-of-thought'],
-    description: 'MoE model with chain-of-thought reasoning'
-  }
+   'devstral-small': {
+        name: 'Devstral Small (24B)',
+        model: 'mistralai/devstral-small-2505:free',
+        capabilities: ['text', 'coding', 'agentic'],
+        description: 'Specialized for advanced software engineering tasks.'
+    },
+    'glm-z1-32b': {
+        name: 'GLM-Z1 Reasoning (32B)',
+        model: 'thudm/glm-z1-32b:free',
+        capabilities: ['text', 'reasoning', 'coding', 'math'],
+        description: 'Enhanced reasoning variant for deep logical problem solving.'
+    },
+    'mai-ds-r1': {
+        name: 'Microsoft MAI DS R1',
+        model: 'microsoft/mai-ds-r1:free',
+        capabilities: ['text', 'reasoning', 'coding'],
+        description: 'Reasoning model with enhanced safety and unblocking.'
+    },
+    'gemma-3n-2b': {
+        name: 'Google Gemma 3n (2B)',
+        model: 'google/gemma-3n-e2b-it:free',
+        capabilities: ['text', 'multilingual', 'reasoning'],
+        description: 'Efficient multimodal model for low-resource deployment.'
+    }
+  
 };
 
 module.exports = { AI_MODELS };
