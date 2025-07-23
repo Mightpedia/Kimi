@@ -20,6 +20,13 @@ const AI_MODELS = {
     capabilities: ['text', 'reasoning', 'multilingual'],
     description: 'Versatile model with thinking and dialogue modes'
   },
+  'qwen3-235b': {
+    name: 'Qwen3 235B A22B 2507',
+    provider: 'openrouter',
+    model: 'qwen/qwen3-235b-a22b-07-25:free',
+    capabilities: ['text', 'reasoning', 'multilingual', 'math', 'coding'],
+    description: '262K context multilingual Mixture-of-Experts model (22B active). Excellent at long-context reasoning, math, and code.'
+  },
   'mistral-small': {
     name: 'Mistral Small 3.1 24B',
     provider: 'openrouter',
